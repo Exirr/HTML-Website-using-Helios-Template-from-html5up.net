@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Rules</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+	</head>
+	<body class="left-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Online Photo Club</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="rules.html">Rules</a></li>
+								<li><a href="gallery.html">Gallery</a>
+									<ul>
+										<li><a href="gallerywinners.html">Winners</a></li>
+									</ul>
+								</li>
+								<li><a href="vote.html">Vote</a></li>	
+								<li><a href="submit.html">Submit</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row 200%">
+							<div class="4u 12u(mobile)" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3><a href="#">Share this Site</a></h3>
+									</header>
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<p>Contact Email:<br> 
+<a href="mailto:linkewitziv@gmail.com">linkewitziv@gmail.com</a>
+</p>
+        
+
+								</section>
+								<hr />
+							</div>
+							<div class="8u 12u(mobile) important(mobile)" id="content">
+								<article id="main">
+									<header>
+										<h2><a href="#">Vote</a></h2>
+										<p>
+										Place your vote for your favorite photo here!
+										</p>
+									</header>
+								<div id="poll">
+<h3>Which image looks the best to you?</h3>
+<form>
+One:
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+<br>Two:
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+<br>Three:
+<input type="radio" name="vote" value="2" onclick="getVote(this.value)">
+<br>Four:
+<input type="radio" name="vote" value="3" onclick="getVote(this.value)">
+<br>Five:
+<input type="radio" name="vote" value="4" onclick="getVote(this.value)">
+<br>Six:
+<input type="radio" name="vote" value="5" onclick="getVote(this.value)">
+</form>
+</div>
+									</p>
+								</article>
+							</div>
+						</div>
+						<hr />
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="rules.html">Rules</a></li>
+								<li><a href="right-sidebar.html">Gallery</a>
+									<ul>
+										<li><a href="gallerywinners.html">Winners</a></li>
+									</ul>
+								</li>
+								<li><a href="vote.html">Vote</a></li>
+								<li><a href="submit.html">Submit</a></li>
+							</ul>
+						</nav>
+					<div class="container">
+<script id="cid0020000181117814647" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 100%;height: 100%;">{"handle":"photoclub1234","arch":"js","styles":{"a":"6600cc","c":"FFFFFF","d":"FFFFFF","f":0,"i":0,"k":"6600cc","l":"6600cc","m":"6600cc","n":"FFFFFF","p":"10","q":"6600cc","fwtickm":1}}</script>
+<p>Contact Email:<br> 
+<a href="mailto:linkewitziv@gmail.com">linkewitziv@gmail.com</a>
+</p>
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+						<hr />
+						<div class="row">
+							<div class="12u">
+
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; This site is for educational purposes only</li><li>Design: Helios by <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.onvisible.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script id="cid0020000181118083108" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 200px;height: 300px;">{"handle":"photoclub1234","arch":"js","styles":{"a":"6600cc","c":"FFFFFF","d":"FFFFFF","f":0,"i":0,"k":"6600cc","l":"6600cc","m":"6600cc","n":"FFFFFF","p":"10","q":"6600cc","pos":"br","cv":1,"cvbg":"CC0000","cvw":200,"cvh":30,"ticker":1,"fwtickm":1}}</script>
+	</body>
+</html>
